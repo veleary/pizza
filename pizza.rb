@@ -6,7 +6,7 @@ module Pizza
  # toppings  - The Array of all the toppings on the pie. 
  #
  # Returns a new Pie object. 
-    def initialize(toppings)
+    def initialize(toppings:cheese)
       @toppings = [] 
     end
   end
