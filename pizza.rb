@@ -7,9 +7,10 @@ module Pizza
  #
  # Returns a new Pie object. 
     def initialize(toppings=[Topping.new('cheese', vegetarian: true)])
-      @toppings = [] 
-    end
+      @toppings = toppings
+      end
   end
+
 
   class Topping
     attr_accessor :name, :vegetarian
@@ -19,7 +20,7 @@ module Pizza
  # vegetarian - The Boolean indicating whether or not the topping is vegetarian. 
  # 
  # Returns a new Topping object. 
-    def initialize(name,vegetarian:false)
+    def initialize (name, vegetarian:false)
     @name = name 
     @vegetarian = vegetarian   
     end
